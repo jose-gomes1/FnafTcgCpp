@@ -1,0 +1,48 @@
+Name,HP,MaxElectricity,Attack1Name,Attack1Type,Attack1Cost,Attack1Value,Attack2Name,Attack2Type,Attack2Cost,Attack2Value
+Freddy,100,3,Mic Toss,Single,1,15,Jumpscare,Stall,2,0
+Bonnie,100,4,Bash Jam,Multi,1,10,Bite,Multi,3,30
+Chica,90,3,Cupcake,Heal,3,30,,,
+Foxy,125,4,Hook,Single,1,15,Hot Cheese,Multi,2,20
+Golden Freddy,150,2,ESC Key,Multi,2,120,,,
+Toy Freddy,80,2,Mic Toss,Single,1,20,Pizza Wheel,Multi,2,40
+Toy Bonnie,75,3,Bash Jam,Multi,1,30,Party Favors,Heal,2,10
+Toy Chica,150,1,Cupcake Party,Heal,1,20,,,
+Toy Foxy (Mangle),150,1,Bite,Multi,1,50,,,
+Withered Freddy,125,3,Mic Toss,Single,1,20,Unscrew,Single,2,120
+Withered Bonnie,150,2,Eye Beam,Single,2,50,,,
+Withered Chica,125,2,Cupcake Party,Heal,2,25,,,
+Withered Foxy,150,2,Jumpscare,Stall,1,0,Mega Hook,Single,2,50
+Withered Golden Freddy,150,1,Jumpscare,Stall,1,0,,,
+Puppet,150,3,Gift Boxes,Heal,1,30,Strings Attached,Single,3,0
+Balloon Boy,70,2,Balloons,Single,1,30,,,
+JJ,80,2,Balloons,Single,1,30,,,
+Springbonnie,100,4,Springlocks,Multi,3,30,,,
+RWQFSFASXC,125,2,Glitching Dash,Single,1,20,Crash-Scare,Stall,2,0
+Shadow Freddy,150,3,ESC Key,Multi,2,120,Crash-Scare,Stall,3,0
+Phantom Freddy,100,3,Shadow Bash,Single,1,25,Phantom Fog,Multi,2,35
+Phantom Foxy,125,3,Haunted Hook,Single,1,20,Unscrew,Single,2,120
+Phantom Chica,90,2,Phantom Cupcake,Heal,2,90,Unscrew,Single,2,120
+Phantom Mangle,100,3,Toxic Bite,Single,1,20,Pizza Wheel 2,Multi,2,40
+Phantom Balloon Boy,60,1,Toxic Balloons,Single,0,10,,,
+Phantom Puppet,100,3,Haunting,Stall,1,0,Hot Cheese 2,Multi,2,25
+Springtrap,150,3,Illusions,Single,1,50,Springlocks,Multi,3,50
+Nightmare Freddy,150,5,Bite 2,Multi,2,50,Freddles,Multi,5,90
+Nightmare Bonnie,175,4,Bite 2,Multi,1,40,Pizza Wheel 2,Multi,4,120
+Nightmare Chica,125,3,Bite 2,Multi,1,50,Waterhose,Single,3,0
+Nightmare Foxy,150,3,Hot Cheese 2,Multi,2,70,Unscrew 2,Multi,3,250
+Nightmare Fredbear,175,3,Mega Bite,Multi,2,70,Rainy Day 2,Multi,2,0
+Nightmare,200,3,Mega Bite,Multi,2,70,Rainy Day 2,Multi,2,0
+Plushtrap,125,3,Jumpscare,Stall,1,0,,,
+Jack-O-Bonnie,200,5,Slasher,Multi,5,0,,,
+Jack-O-Chica,200,5,Haunting,Stall,1,0,Slasher,Multi,5,0
+Nightmare Mangle,150,5,Prize Ball,Single,3,0,,,
+Nightmare Balloon Boy,125,5,Mega Bite,Multi,2,70,Balloons 2,Single,5,150
+Nightmarionne,250,5,4th Wall,Multi,5,150,,,
+Endo-01,75,5,Endo Army,Multi,1,50,Power Song,Multi,5,0
+Endo-02,80,4,Endo Army,Multi,2,100,Neon Wall,Multi,3,0
+Springlock Endo,90,3,Happy Jam,Heal,1,100,Cosmic Song,Multi,2,125
+Nightmare Endo,100,3,Mega Bite,Multi,2,90,,,
+Plush Endo,75,3,Eye Beam,Single,2,75,,,
+Funtime Endo,100,3,Controlled Shock,Single,2,60,Precision Wires,Multi,3,80
+Glamrock Endo,90,3,Sonic Echo,Single,2,50,Laser Burst,Multi,3,90
+The Mimic (M2),150,5,Copycat,Single,1,0,Tiger's Rock,Multi,5,100
