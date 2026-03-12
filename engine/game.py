@@ -38,9 +38,14 @@ class Game:
 
     def start_turn(self):
         p = self.current_player(); p.start_turn()
-        if self.round>1 or self.turn!=self.first_player: p.draw(1)
+        if self.round>1 or self.turn!=self.first_player:
+            if not p.deck:
+                self.log(f"{p.name} nao tem mais cartas no deck! DERROTA POR DECKOUT!")
+                self.game_over = True
+                self.winner = self.players[1 - self.turn]
+                return
+            p.draw(1)
         self.log(f"\n{'='*50}\nTurno de {p.name} (Rodada {self.round})\n{'='*50}")
-        for a in p.active: a.tick_turn()
         self._extra_attack_ids = start_of_turn_passives(p, self, self.turn)
 
     def end_turn(self):
@@ -71,6 +76,13 @@ class Game:
                     p.points += 1
                     self.log(f"{p.name} ganha 1 ponto! (Total: {p.points})")
                     max_p = get_max_party(opp)
+                    # Refill from hand first; if no animatronics in hand, draw until one appears
+                    if not opp.animatronics_in_hand():
+                        while opp.deck:
+                            drawn = opp.deck.pop(0)
+                            opp.hand.append(drawn)
+                            if isinstance(drawn, AnimatronicCard):
+                                break
                     for card in opp.animatronics_in_hand():
                         if len(opp.active)<max_p:
                             opp.hand.remove(card); opp.active.append(card)
@@ -92,7 +104,12 @@ class Game:
         else: targets=[]
         if self.round==1 and self.turn==self.first_player:
             self.log("O primeiro jogador nao pode atacar no primeiro turno!"); return False
+        elec_before = attacker.electricity
         for l in resolve_attack(attacker, attack, targets, p.active, opp.active, self): self.log(l)
+        # electricity actually spent (gambling attacks may refund, so diff is correct)
+        spent = elec_before - attacker.electricity
+        for _ in range(max(0, spent)):
+            p.discard.append(ElectricityCard())
         if attacker.name=="Endo-01" and attacker.passive_active():
             for t in targets:
                 if t.is_alive(): attacker._endo01_rust_target = t
